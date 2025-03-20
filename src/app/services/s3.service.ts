@@ -6,7 +6,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class S3Service {
-  private _api = 'http://localhost:3000'
+  private _api = 'https://m1coursebackend.onrender.com'
   constructor(private _http: HttpClient) { }
 
   generatePresignedurl(fileName: string, fileType: string): Observable<{ presignedUrl: string }> {
